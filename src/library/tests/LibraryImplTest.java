@@ -35,7 +35,7 @@ class LibraryImplTest {
         assertEquals(2, library.quantity());
 
         Book book2 = new Book("autor6", 1365, 3465347583734L, "ey");
-        assertTrue(library.addBook(book2)); // Added another book
+        assertTrue(library.addBook(book2));
         assertFalse(library.addBook(book[0]));
     }
 
