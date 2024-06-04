@@ -36,7 +36,7 @@ class LibraryImplTest {
 
         Book book2 = new Book("autor6", 1365, 3465347583734L, "ey");
         assertTrue(library.addBook(book2)); // Added another book
-        assertFalse(library.addBook(book[0])); // Library capacity is full now
+        assertFalse(library.addBook(book[0]));
     }
 
     @Test
