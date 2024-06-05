@@ -36,7 +36,7 @@ class LibraryImplTest {
 
         Book book2 = new Book("autor6", 1365, 3465347583734L, "ey");
         assertTrue(library.addBook(book2));
-        assertFalse(library.addBook(book[1]));
+        assertFalse(library.addBook(book[0]));
     }
 
     @Test
