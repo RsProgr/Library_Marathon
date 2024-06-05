@@ -68,6 +68,9 @@ class LibraryImplTest {
 
     @Test
     void printBook() {
+        library.addBook(book[1]);
+        library.addBook(book[2]);
+        library.printBook();
     }
 
     @Test
