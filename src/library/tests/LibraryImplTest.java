@@ -41,6 +41,11 @@ class LibraryImplTest {
 
     @Test
     void removeBook() {
+        library.addBook(book[1]);
+        Book removeBook = library.removeBook(book[1].getIsbn());
+        assertEquals(book[1], removeBook);
+        assertNull(library.findBook(book[1].getIsbn()));
+        assertEquals(0, library.quantity());
     }
 
     @Test
