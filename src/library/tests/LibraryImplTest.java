@@ -50,6 +50,11 @@ class LibraryImplTest {
 
     @Test
     void findBook() {
+        library.addBook(book[1]);
+        library.addBook(book[2]);
+        assertEquals(book[1], library.findBook(book[1].getIsbn()));
+        assertEquals(book[2], library.findBook(book[2].getIsbn()));
+        assertNull(library.findBook(book[3].getIsbn()));
     }
 
     @Test
