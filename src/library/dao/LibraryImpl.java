@@ -69,15 +69,15 @@ public class LibraryImpl implements Library {
             if (book.getIsbn() == isbn) {
                 book.setAuthor(author);
                 return book;
+
             }
         }
         return null;
     }
     @Override
-    public void printBook () {
-        for (int i = 0; i < books.length; i++) {
-            System.out.println(books[i]);
+    public void printBook() {
+            for (int i = 0; i < books.length; i++) {
+                System.out.println(books[i]);
+            }
         }
-
     }
-}
