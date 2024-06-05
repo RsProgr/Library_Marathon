@@ -59,6 +59,11 @@ class LibraryImplTest {
 
     @Test
     void quantity() {
+        assertEquals(0, library.quantity());
+        library.addBook(book[1]);
+        assertEquals(1, library.quantity());
+        library.addBook(book[2]);
+        assertEquals(2, library.quantity());
     }
 
     @Test
