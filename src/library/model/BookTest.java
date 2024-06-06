@@ -13,10 +13,10 @@ class BookTest {
     @BeforeEach
     void setUp() {
         book = new Book[4];
-        book[0] = new Book("autor3", 1964, 451254789L, "title1");
-        book[1] = new Book("autor1", 1962, 451254787L, "title2");
-        book[2] = new Book("autor2", 1954, 451254786L, "title3");
-        book[3] = new Book("autor4", 1967, 451254785L, "title4");
+        book[0] = new Book("George Orwell", 1949, 9780451524935L, "1984");
+        book[1] = new Book("Harper Lee", 1960, 9780061120084L, "To Kill a Mockingbird");
+        book[2] = new Book("J.R.R. Tolkien", 1954, 9780544003415L, "The Fellowship of the Ring");
+        book[3] = new Book("F. Scott Fitzgerald", 1925, 9780743273565L, "The Great Gatsby");
     }
 
     @Test
