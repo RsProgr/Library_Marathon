@@ -37,9 +37,10 @@ class BookTest {
                 return o1.getAuthor().compareTo(o2.getAuthor());
             }
         };
-        System.out.println("=========================================================");
-        printArray(book);
         System.out.println("=============Test Book sorting by comparator============");
+        printArray(book);
+        System.out.println("------------------------------------------------------------------------------");
+        System.out.println("=============Test Book after sorting by comparator============");
 
         Arrays.sort(book, bookComparator);
         printArray(book);
