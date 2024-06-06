@@ -2,7 +2,7 @@ package library.model;
 
 import java.util.Objects;
 
-public class Book {
+public class Book implements Comparable <Book> {
     private long isbn;
     private String title;
     private String author;
@@ -62,5 +62,12 @@ public class Book {
     @Override
     public String toString() {
         return "Title: " + title + ", Author: " + author + ", Year: " + isYear + ", ISBN: " + isbn;
+    }
+
+    @Override
+    public int compareTo(Book o) {
+        int res = this.isYear - getIsYear() - o.getIsYear();
+        res = this.isYear - o.isYear;
+        return res;
     }
 }

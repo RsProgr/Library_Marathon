@@ -66,7 +66,7 @@ public class LibraryImpl implements Library {
     @Override
     public Book updateBook(long isbn, String author) {
         for (Book book : books) {
-            if (book.getIsbn() == isbn) {
+            if (book.getIsbn() ==  isbn) {
                 book.setAuthor(author);
                 return book;
 
@@ -80,4 +80,4 @@ public class LibraryImpl implements Library {
                 System.out.println(books[i]);
             }
         }
-    }
+}
