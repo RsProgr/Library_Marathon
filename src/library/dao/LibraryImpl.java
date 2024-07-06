@@ -63,21 +63,23 @@ public class LibraryImpl implements Library {
     public int quantity() {
         return this.size;
     }
+
     @Override
     public Book updateBook(long isbn, String author) {
-        for (Book book : books) {
-            if (book.getIsbn() ==  isbn) {
-                book.setAuthor(author);
-                return book;
-
+        for (int i = 0; i < size; i++) {
+            if (books[i].getIsbn() == isbn) {
+                books[i].setAuthor(author);
+                return books[i];
             }
         }
         return null;
     }
+
+
     @Override
     public void printBook() {
-            for (int i = 0; i < books.length; i++) {
-                System.out.println(books[i]);
-            }
+        for (int i = 0; i < books.length; i++) {
+            System.out.println(books[i]);
         }
+    }
 }
